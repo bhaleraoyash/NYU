@@ -1,0 +1,266 @@
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  body {
+    background: url('BG.jpg');
+    background-size: cover;
+  }
+  p {
+    color: #444;
+  }
+  
+  input[type='text'] {
+    width: 500px;
+    height: 60px;
+  }
+  .upload {
+    width: 450px;
+    font-size: 24px;
+    margin-left: 0px;
+  }
+  button[type='line1'] {
+    background-color: #063970;
+    width: 75px;
+    height: 60px;
+  }
+  button[type='line1']:focus {
+    outline: 0;
+  }
+  button[type='line2'] {
+    background-color: #063970;
+    width: 150px;
+    height: 60px;
+  }
+  button[type='line2']:focus {
+    outline: 0;
+  }
+  h2 {
+    font-family: Constantia;
+  }
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 40px;
+    text-align: center;
+    opacity: 0.9;
+  }
+  .output-group {
+  width: 700px;
+  }
+
+  h3 {
+    font-family: Constantia;
+  }
+  .container {
+    max-width: 100%;/*700px;*/
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(0,8,51,0.9), rgba(0,8,51,0.9)), url(download.jpg);
+    margin: 0 auto;
+    padding-left: 40px;
+    text-align: center;
+    opacity: 0.9;
+  }
+  
+  .container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .page-description {
+    font-size: 1.1rem;
+    margin: 0 auto;
+  }
+  
+  .tz-link {
+    font-size: 1em;
+    color: #1da7da;
+    text-decoration: none;
+  }
+  
+  .no-browser-support {
+    display: none;
+    font-size: 1.2rem;
+    color: #e64427;
+    margin-top: 35px;
+  }
+  
+  .app {
+    margin-top: 100px;
+  }
+  .input-group {
+    width: 700px;
+  }
+  
+  #recording-instructions {
+    margin: 15px auto 60px;
+  }
+  
+  #notes {
+    padding-top: 20px;
+  }
+  
+  .note .header {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .note .delete-note,
+  .note .listen-note {
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .note .content {
+    margin-bottom: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 50px 25px;
+    }
+  
+    button {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .banner-section img {
+    margin: 5px;
+    height: 200px;
+    width: 275px;
+  }
+  
+  .banner-section {
+    height: 500px;
+    overflow: auto;
+  }
+  
+  @media (max-width: 1200px) {
+    #bsaHolder {
+      display: none;
+    }
+  }
+
+  .butt {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .butt1 {
+    background-color: white; 
+    color: white; 
+    border: 2px solid #5b2f5d;
+    background-color: #5b2f5d
+  }
+
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.voice{
+  height:20px;
+  position:relative;
+  top:5px;
+  left:10px;
+}
+
+.searchbar{
+  height:45px;
+  border:none;
+  width:500px;
+  font-size:16px;
+  outline: none;
+  
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
